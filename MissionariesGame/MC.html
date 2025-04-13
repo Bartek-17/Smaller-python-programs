@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Python: module MC</title>
+</head>
+
+<body>
+
+    <table class="heading">
+        <tr class="heading-text decor">
+            <td class="title">&nbsp;<br><strong class="title">MC</strong></td>
+            <td class="extra"><a href=".">index</a><br><a
+                    href="file:c%3A%5Cusers%5Cbarto%5Cdesktop%5Cvsc%5Cpython%5Cmissionariesgame%5Cmc.py">c:\users\barto\desktop\vsc\python\missionariesgame\mc.py</a>
+            </td>
+        </tr>
+    </table>
+    <p><span class="code">Missionaries&nbsp;and&nbsp;Cannibals&nbsp;Game<br>
+            Three&nbsp;missionaries&nbsp;and&nbsp;three&nbsp;cannibals&nbsp;must&nbsp;cross&nbsp;a&nbsp;river&nbsp;using&nbsp;a&nbsp;boat&nbsp;which&nbsp;can&nbsp;carry&nbsp;<br>
+            at&nbsp;most&nbsp;two&nbsp;people,under&nbsp;the&nbsp;constraint&nbsp;that,&nbsp;for&nbsp;both&nbsp;banks,&nbsp;if&nbsp;there&nbsp;are&nbsp;missionaries<br>
+            present&nbsp;on&nbsp;the&nbsp;bank,&nbsp;they&nbsp;cannot&nbsp;be&nbsp;outnumbered<br>
+            by&nbsp;cannibals.<br>
+            &nbsp;<br>
+            Controls:<br>
+            -&nbsp;Mouse&nbsp;click:&nbsp;Select&nbsp;Missionary&nbsp;1,&nbsp;2,&nbsp;3<br>
+            -&nbsp;Mouse&nbsp;click:&nbsp;Select&nbsp;Cannibal&nbsp;1,&nbsp;2,&nbsp;3<br>
+            -&nbsp;Space:&nbsp;Move&nbsp;the&nbsp;boat<br>
+            -&nbsp;R:&nbsp;Restart&nbsp;the&nbsp;game</span></p>
+    <p>
+    <table class="section">
+        <tr class="decor pkg-content-decor heading-text">
+            <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td>
+        </tr>
+
+        <tr>
+            <td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td class="singlecolumn">
+                <table>
+                    <tr>
+                        <td class="multicolumn"><a href="os.html">os</a><br>
+                        </td>
+                        <td class="multicolumn"><a href="pygame.html">pygame</a><br>
+                        </td>
+                        <td class="multicolumn"></td>
+                        <td class="multicolumn"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p>
+    <table class="section">
+        <tr class="decor index-decor heading-text">
+            <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td>
+        </tr>
+
+        <tr>
+            <td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td class="singlecolumn">
+                <dl>
+                    <dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt class="heading-text"><a href="MC.html#Boat">Boat</a>
+                            </dt>
+                            <dt class="heading-text"><a href="MC.html#Person">Person</a>
+                            </dt>
+                        </dl>
+                    </dd>
+                </dl>
+                <p>
+                <table class="section">
+                    <tr class="decor title-decor heading-text">
+                        <td class="section-title" colspan=3>&nbsp;<br><a name="Boat">class <strong>Boat</strong></a>(<a
+                                href="builtins.html#object">builtins.object</a>)</td>
+                    </tr>
+
+                    <tr>
+                        <td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="decor title-decor" colspan=2><span class="code"><a
+                                    href="#Boat">Boat</a>(x,&nbsp;y,&nbsp;pos,&nbsp;gameDisplay)<br>
+                                &nbsp;<br>
+                                <a
+                                    href="#Boat">Boat</a>&nbsp;class&nbsp;represents&nbsp;the&nbsp;boat&nbsp;in&nbsp;the&nbsp;game.<br>
+                                &nbsp;<br>
+                                Attributes:<br>
+                                -&nbsp;x:&nbsp;X-coordinate&nbsp;of&nbsp;the&nbsp;boat<br>
+                                -&nbsp;y:&nbsp;Y-coordinate&nbsp;of&nbsp;the&nbsp;boat<br>
+                                -&nbsp;pos:&nbsp;Position&nbsp;of&nbsp;the&nbsp;boat&nbsp;(indicates&nbsp;left/right&nbsp;shore&nbsp;and&nbsp;left/right&nbsp;of&nbsp;the&nbsp;boat)<br>
+                                -&nbsp;gameDisplay:&nbsp;Pygame&nbsp;display&nbsp;surface<br>&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="singlecolumn">Methods defined here:<br>
+                            <dl>
+                                <dt><a name="Boat-__init__"><strong>__init__</strong></a>(self, x, y, pos, gameDisplay)
+                                </dt>
+                                <dd><span
+                                        class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span>
+                                </dd>
+                            </dl>
+
+                            <hr>
+                            Data descriptors defined here:<br>
+                            <dl>
+                                <dt><strong>__dict__</strong></dt>
+                                <dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>__weakref__</strong></dt>
+                                <dd><span
+                                        class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span>
+                                </dd>
+                            </dl>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                <table class="section">
+                    <tr class="decor title-decor heading-text">
+                        <td class="section-title" colspan=3>&nbsp;<br><a name="Person">class
+                                <strong>Person</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td>
+                    </tr>
+
+                    <tr>
+                        <td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="decor title-decor" colspan=2><span class="code"><a
+                                    href="#Person">Person</a>(x,&nbsp;y,&nbsp;x_change,&nbsp;pos,&nbsp;char,&nbsp;leftright,&nbsp;image,&nbsp;gameDisplay)<br>
+                                &nbsp;<br>
+                                <a
+                                    href="#Person">Person</a>&nbsp;class&nbsp;represents&nbsp;a&nbsp;person&nbsp;(Missionary&nbsp;or&nbsp;Cannibal)&nbsp;in&nbsp;the&nbsp;game.<br>
+                                &nbsp;<br>
+                                Attributes:<br>
+                                -&nbsp;x:&nbsp;X-coordinate&nbsp;of&nbsp;the&nbsp;person<br>
+                                -&nbsp;y:&nbsp;Y-coordinate&nbsp;of&nbsp;the&nbsp;person<br>
+                                -&nbsp;x_change:&nbsp;X-axis&nbsp;movement<br>
+                                -&nbsp;pos:&nbsp;Position&nbsp;of&nbsp;the&nbsp;person&nbsp;(indicates&nbsp;left/right&nbsp;shore&nbsp;and&nbsp;left/right&nbsp;of&nbsp;the&nbsp;boat)<br>
+                                -&nbsp;char:&nbsp;Character&nbsp;representing&nbsp;Missionary&nbsp;('M')&nbsp;or&nbsp;Cannibal&nbsp;('C')<br>
+                                -&nbsp;leftright:&nbsp;Indicates&nbsp;whether&nbsp;the&nbsp;person&nbsp;is&nbsp;on&nbsp;the&nbsp;left&nbsp;or&nbsp;right&nbsp;side<br>
+                                -&nbsp;image:&nbsp;Pygame&nbsp;image&nbsp;representing&nbsp;the&nbsp;person<br>
+                                -&nbsp;gameDisplay:&nbsp;Pygame&nbsp;display&nbsp;surface<br>&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="singlecolumn">Methods defined here:<br>
+                            <dl>
+                                <dt><a name="Person-__init__"><strong>__init__</strong></a>(self, x, y, x_change, pos,
+                                    char, leftright, image, gameDisplay)</dt>
+                                <dd><span
+                                        class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt><a name="Person-display"><strong>display</strong></a>(self)</dt>
+                                <dd><span
+                                        class="code">Display&nbsp;the&nbsp;person&nbsp;on&nbsp;the&nbsp;game&nbsp;display.</span>
+                                </dd>
+                            </dl>
+
+                            <hr>
+                            Data descriptors defined here:<br>
+                            <dl>
+                                <dt><strong>__dict__</strong></dt>
+                                <dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>__weakref__</strong></dt>
+                                <dd><span
+                                        class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span>
+                                </dd>
+                            </dl>
+                            <hr>
+                            Data and other attributes defined here:<br>
+                            <dl>
+                                <dt><strong>height</strong> = 50
+                            </dl>
+
+                            <dl>
+                                <dt><strong>width</strong> = 50
+                            </dl>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p>
+    <table class="section">
+        <tr class="decor functions-decor heading-text">
+            <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td>
+        </tr>
+
+        <tr>
+            <td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td class="singlecolumn">
+                <dl>
+                    <dt><a name="-introduction_screen"><strong>introduction_screen</strong></a>()</dt>
+                    <dd><span
+                            class="code">Display&nbsp;an&nbsp;introduction&nbsp;screen&nbsp;with&nbsp;the&nbsp;goal&nbsp;and&nbsp;controls.<br>
+                            Press&nbsp;space&nbsp;to&nbsp;start&nbsp;the&nbsp;game.</span></dd>
+                </dl>
+                <dl>
+                    <dt><a name="-main"><strong>main</strong></a>()</dt>
+                    <dd><span
+                            class="code">Main&nbsp;function&nbsp;to&nbsp;run&nbsp;the&nbsp;game&nbsp;logic&nbsp;and&nbsp;display&nbsp;using&nbsp;Pygame.</span>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+    <p>
+    <table class="section">
+        <tr class="decor data-decor heading-text">
+            <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td>
+        </tr>
+
+        <tr>
+            <td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td class="singlecolumn"><strong>Cannibal</strong> = &lt;Surface(50x75x32 SW)&gt;<br>
+                <strong>Cimg</strong> = &lt;Surface(1240x1754x32 SW)&gt;<br>
+                <strong>Game_Over</strong> = &lt;Surface(200x200x32 SW)&gt;<br>
+                <strong>Mimg</strong> = &lt;Surface(1350x1800x32 SW)&gt;<br>
+                <strong>Missionary</strong> = &lt;Surface(75x75x32 SW)&gt;<br>
+                <strong>Victory</strong> = &lt;Surface(200x200x32 SW)&gt;<br>
+                <strong>Wimg</strong> = &lt;Surface(991x473x32 SW)&gt;<br>
+                <strong>bgImg</strong> = &lt;Surface(800x400x24 SW)&gt;<br>
+                <strong>boatImg</strong> = &lt;Surface(150x100x32 SW)&gt;<br>
+                <strong>display_height</strong> = 400<br>
+                <strong>display_width</strong> = 800<br>
+                <strong>gameDisplay</strong> = &lt;Surface(800x400x32 SW)&gt;<br>
+                <strong>game_over</strong> = &lt;Surface(4096x4096x32 SW)&gt;<br>
+                <strong>imagebackground</strong> = &lt;Surface(6325x3514x24 SW)&gt;<br>
+                <strong>imageboat</strong> = &lt;Surface(7000x3039x32 SW)&gt;
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
